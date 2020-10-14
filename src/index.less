@@ -1,0 +1,35 @@
+@navHeight: 60px;
+@slideWidth: 210px;
+
+#app {
+  height: 100%;
+}
+
+.root-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: #f6f6f6;
+  .slider-container {
+    background-color: #001529;
+    width: @slideWidth;
+    height: 100%;
+  }
+  .page-container {
+    height: 100%;
+    width: 100%;
+    min-width: 789px;
+    overflow: hidden;
+    .page-index {
+      width: 100%;
+      height: calc(100vh - 65px);
+    }
+  }
+
+  .page-context {
+    margin: 10px;
+    background-color: #ffffff;
+    height: 100%;
+    overflow: auto;
+  }
+}
